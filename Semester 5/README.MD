@@ -1,4 +1,4 @@
-//////////////////////////////////////////////////////
+-
 
 THE FOLDER "LIST (BETA) CONSIST OF 3 FINAL JAVA FILES:
   
@@ -6,4 +6,4 @@ THE FOLDER "LIST (BETA) CONSIST OF 3 FINAL JAVA FILES:
   2) Map.java
   3) List.java
 
-////////////////////////////////////////////////////// 
+-
