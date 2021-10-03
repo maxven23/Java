@@ -124,7 +124,8 @@ public class List {
         return -1;
     }
 
-    public String listString() {
+    @Override
+    public String toString() {
         String listS = "[ ";
         for (int i = 0; i < this.size - 1; ++i) {
             listS += get(i);
