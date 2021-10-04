@@ -34,7 +34,7 @@ public class Map {
         this.size = 0;
         this.capacity = DEFAULT_CAPACITY;
         this.entries = new List(DEFAULT_CAPACITY);
-        this.keys = new List(DEFAULT_CAPACITY);
+        this.keys = new List();
     }
 
     public Map(int capacity) {
