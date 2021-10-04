@@ -44,20 +44,6 @@ public class Map {
         this.entries = new List(capacity);
     }
 
-
-    public void recap() {
-        this.capacity *= 2;
-
-        List temp = new List(this.capacity);
-        for (int i = 0; i < this.keys.size(); ++i) {
-            Entry entry = new Entry(keys.get(i), get(keys.get(i)));
-            int index = keys.get(i).hashCode() & (capacity - 1);
-            temp.set(entry, index);
-        }
-
-        this.entries = temp;
-    }
-
     //------- Methods -------//
     public void put(Object key, Object value) {
         int index = key.hashCode() & (capacity - 1);
