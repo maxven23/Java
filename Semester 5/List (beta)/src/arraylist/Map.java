@@ -71,7 +71,7 @@ public class Map {
 
         List entries = (List) this.entries.get(index);
         for (int i = 0; i < entries.size(); ++i) {
-            if (((Entry) entries.get(i)).getKey() == key) {
+            if (key.equals(((Entry) entries.get(i)).getKey())) {
                 return ((Entry) entries.get(i)).getValue();
             }
         }
@@ -89,7 +89,7 @@ public class Map {
         }
 
         for (int i = 0; i < entries.size(); ++i) {
-            if (((Entry) entries.get(i)).getKey() == key) {
+            if (key.equals(((Entry) entries.get(i)).getKey())) {
                 return (Entry) ((Entry) entries.get(i)).getValue();
             }
         }
@@ -104,7 +104,7 @@ public class Map {
         Object value = null;
 
         for (int i = 0; i < entries.size(); ++i) {
-            if (((Entry) entries.get(i)).getKey() == key) {
+            if (key.equals(((Entry) entries.get(i)).getKey())) {
                 value = ((Entry) entries.get(i)).getValue();
                 entries.remove(i);
                 keys.remove(keys.indexOf(key));
